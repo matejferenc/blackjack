@@ -1,0 +1,44 @@
+Hard
+    2  3  4  5  6  7  8  9 10  J  Q  K  A
+ 4  h  s  r  H  h  s  r  r  h  S  r  s  r
+ 5  h  s  s  h  s  h  h  h  h  h  h  r  s
+ 6  h  h  h  h  h  h  h  h  h  r  h  r  r
+ 7  h  h  h  h  h  h  h  h  s  h  r  h  h
+ 8  h  S  h  H  h  h  h  h  h  h  h  r  h
+ 9  H  h  S  H  H  h  h  h  h  h  h  h  r
+10  H  H  H  H  H  H  H  S  h  h  h  h  h
+11  s  s  s  s  S  H  s  s  s  s  s  s  s
+12  s  h  s  s  s  h  h  h  h  h  h  h  r
+13  h  s  s  s  s  h  h  h  h  h  h  h  h
+14  s  s  s  s  s  h  h  h  h  h  r  r  h
+15  s  s  s  s  s  h  h  h  r  r  r  r  r
+16  s  s  s  s  s  h  h  r  r  r  r  r  r
+17  s  s  s  s  s  s  s  s  s  s  s  s  s
+18  s  s  s  s  s  s  s  s  s  s  s  s  s
+19  s  s  s  s  s  s  s  s  s  s  s  s  s
+20  s  s  s  s  s  s  s  s  s  s  s  s  s
+21  S  S  S  H  r  S  S  s  s  s  s  s  S
+Soft
+    2  3  4  5  6  7  8  9 10  J  Q  K  A
+12  s  H  H  H  S  S  r  s  h  h  s  h  s
+13  H  S  h  H  H  h  h  h  h  h  h  h  r
+14  s  h  h  H  h  h  h  H  h  h  h  h  r
+15  h  H  S  S  h  h  h  h  h  h  h  h  r
+16  h  S  H  H  S  h  h  h  h  h  h  r  r
+17  H  r  H  H  S  h  h  h  h  h  r  h  r
+18  H  s  s  s  H  s  s  s  h  h  h  h  s
+19  s  s  s  S  s  s  s  s  s  s  s  s  s
+20  s  s  s  s  s  s  s  s  s  s  s  s  s
+21  h  s  h  h  s  h  s  H  s  r  h  S  H
+Pairs
+    2  3  4  5  6  7  8  9 10  J  Q  K  A
+ 4  h  S  p  h  p  p  H  r  h  s  r  h  h
+ 6  h  s  p  H  h  s  p  h  s  h  r  h  s
+ 8  h  h  h  p  H  p  p  p  h  h  h  r  r
+10  S  h  H  S  H  H  S  S  h  h  h  h  h
+12  H  s  p  p  p  p  s  p  h  h  h  s  r
+14  s  s  H  r  p  h  s  s  r  r  r  h  s
+16  p  p  p  p  p  p  p  s  h  s  h  s  p
+18  p  s  s  r  p  s  p  r  h  h  s  s  s
+20  s  s  s  s  s  s  s  s  s  s  s  s  s
+22  p  p  p  p  p  p  p  p  p  p  p  p  p
