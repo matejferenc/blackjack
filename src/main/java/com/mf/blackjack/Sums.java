@@ -7,8 +7,10 @@ import java.util.List;
 public class Sums {
 
     private List<Integer> sums = new ArrayList<>();
+    private List<Card> cards;
 
     public Sums(List<Card> hand) {
+        this.cards = hand;
         for (Card c : hand) {
             this.add(c.getValues());
         }
@@ -46,7 +48,7 @@ public class Sums {
 
     public boolean isSoft() {
         Collections.sort(sums);
-        return sums.size() > 1 && sums.get(0) < 21 && sums.get(1) < 21;
+        return sums.size() > 1 && sums.get(0) < 21 && sums.get(1) <= 21;
     }
 
     public int getMaximumLessThan21() {
@@ -58,5 +60,13 @@ public class Sums {
             }
         }
         return maxSum;
+    }
+
+    public boolean isBlackjack() {
+        return cards.size() == 2 && containsAce() && getMaximum() == 21;
+    }
+
+    private boolean containsAce() {
+        return cards.contains(Card.ACE);
     }
 }

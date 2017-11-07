@@ -58,7 +58,9 @@ public class BlackjackDnaBuilder implements DnaBuilder {
         for (int i = 12; i <= 21; i++) {
             for (Card card : Card.values()) {
                 BlackjackDna.State state = new BlackjackDna.State(i, card);
-                dna.getSoft().put(state, random(mother, father).getSoft().get(state));
+                dna.getSoft().put(
+                        state, random(mother, father).getSoft().get(state)
+                );
             }
         }
         for (int i = 4; i <= 22; i += 2) {

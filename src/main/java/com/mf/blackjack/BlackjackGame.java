@@ -17,11 +17,11 @@ public class BlackjackGame {
         List<Card> hand = new ArrayList<>();
         hand.add(Card.random());
         hand.add(Card.random());
-        
+
         boolean surrenderAllowed = dealer != Card.ACE;
         return play(hand, true, surrenderAllowed);
     }
-    
+
     private List<GameResult> play(List<Card> hand, boolean doubleAllowed, boolean surrenderAllowed) {
         List<GameResult> result = new ArrayList<>();
         if (new Sums(hand).getMinimum() > 21) {
@@ -73,7 +73,7 @@ public class BlackjackGame {
         int handValue = playerSums.getMaximumLessThan21();
         if (playerSums.getMinimum() > 21) {
             result = doubled ? GameResult.DOUBLE_LOSE : GameResult.LOSE;
-        } else if (isBlackjack(hand) && !isBlackjack(dealerCards)) {
+        } else if (playerSums.isBlackjack() && !dealerSums.isBlackjack()) {
             result = GameResult.BLACKJACK;
         } else if (dealerValue > 21) {
             result = doubled ? GameResult.DOUBLE_WIN : GameResult.WIN;
@@ -81,7 +81,7 @@ public class BlackjackGame {
             result = doubled ? GameResult.DOUBLE_WIN : GameResult.WIN;
         } else if (handValue < dealerValue) {
             result = doubled ? GameResult.DOUBLE_LOSE : GameResult.LOSE;
-        } else if (isBlackjack(dealerCards)) {
+        } else if (dealerSums.isBlackjack()) {
             result = doubled ? GameResult.DOUBLE_LOSE : GameResult.LOSE;
         } else if (dealerValue == handValue) {
             result = GameResult.DRAW;
@@ -101,12 +101,8 @@ public class BlackjackGame {
         }
         return dealerCards;
     }
-    
-    private boolean isBlackjack(List<Card> hand) {
-        return hand.size() == 2 && containsAce(hand) && new Sums(hand).getMaximum() == 21;
-    }
 
-    public static enum GameResult {
+    public enum GameResult {
         WIN,
         DOUBLE_WIN,
         LOSE,
@@ -115,15 +111,15 @@ public class BlackjackGame {
         SURRENDER,
         BLACKJACK
     }
-    
-    private static enum UserAction {
+
+    private enum UserAction {
         HIT,
         STAY,
         DOUBLE,
         SURRENDER,
         SPLIT
     }
-    
+
     private UserAction getUserAction(List<Card> hand, boolean doubleAllowed, boolean surrenderAllowed) {
         Sums sums = new Sums(hand);
         BlackjackNucleotide nucleotide;
@@ -142,27 +138,20 @@ public class BlackjackGame {
                 return doubleAllowed ? UserAction.DOUBLE : UserAction.HIT;
             case DOUBLE_STAY:
                 return doubleAllowed ? UserAction.DOUBLE : UserAction.STAY;
-            case HIT: return UserAction.HIT;
-            case STAY: return UserAction.STAY;
-            case SPLIT: return UserAction.SPLIT;
+            case HIT:
+                return UserAction.HIT;
+            case STAY:
+                return UserAction.STAY;
+            case SPLIT:
+                return UserAction.SPLIT;
             case SURRENDER_HIT:
                 return surrenderAllowed ? UserAction.SURRENDER : UserAction.HIT;
             default:
                 throw new IllegalStateException();
         }
     }
-    
-    private boolean containsAce(List<Card> hand) {
-        return hand.contains(Card.ACE);
-    }
-    
+
     private boolean isPair(List<Card> hand) {
-        if (hand.size() != 2) {
-            return false;
-        }
-        if (hand.get(0) != hand.get(1)) {
-            return false;
-        }
-        return true;
+        return hand.size() == 2 && hand.get(0) == hand.get(1);
     }
 }

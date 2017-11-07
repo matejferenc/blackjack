@@ -13,11 +13,11 @@ import com.mf.evolution.PopulationSelector;
 public class Blackjack {
 
     public static void main(String args[]) {
-        BlackjackPopulationInitializer populationInitializer = new BlackjackPopulationInitializer(1000, new BlackjackDnaBuilder());
-        PopulationSelector populationSelector = new PopulationSelector(0.2);
+        BlackjackPopulationInitializer populationInitializer = new BlackjackPopulationInitializer(10, new BlackjackDnaBuilder());
+        PopulationSelector populationSelector = new PopulationSelector(0.3);
         BlackjackDnaBuilder dnaBuilder = new BlackjackDnaBuilder();
         BlackjackCrossoverBuilder blackjackCrossoverBuilder = new BlackjackCrossoverBuilder(dnaBuilder);
-        Mutator mutator = new Mutator(1, 1, dnaBuilder);
+        Mutator mutator = new Mutator(0.1, 5, dnaBuilder);
         BlackjackConditionsEvaluator conditionsEvaluator = new BlackjackConditionsEvaluator();
         EvolutionAlgorithm evolutionAlgorithm = new EvolutionAlgorithm(populationSelector, blackjackCrossoverBuilder,
                 mutator, populationInitializer, conditionsEvaluator);

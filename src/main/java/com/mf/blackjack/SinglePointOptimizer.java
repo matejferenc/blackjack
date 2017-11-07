@@ -19,7 +19,7 @@ public class SinglePointOptimizer {
     public static void main(String args[]) {
         populationInitializer = new BlackjackPopulationInitializer(10, new BlackjackDnaBuilder());
         BlackjackDnaBuilder dnaBuilder = new BlackjackDnaBuilder();
-        Mutator mutator = new Mutator(1, 1, dnaBuilder);
+        Mutator mutator = new Mutator(0.1, 5, dnaBuilder);
         populationBreeder = new PopulationBreeder(populationInitializer.getSize(), null, mutator);
         conditionsEvaluator = new BlackjackConditionsEvaluator();
         new SinglePointOptimizer().run();
