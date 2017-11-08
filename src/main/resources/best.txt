@@ -1,16 +1,16 @@
 Hard
     2  3  4  5  6  7  8  9 10  J  Q  K  A
- 4  h  h  r  S  s  h  r  r  r  r  S  s  S
- 5  h  s  s  h  H  h  h  h  h  h  s  r  s
- 6  h  h  r  S  s  h  s  h  r  r  S  r  h
+ 4  S  h  h  S  s  H  r  s  r  r  S  s  S
+ 5  h  s  s  h  s  h  h  h  h  h  s  r  r
+ 6  h  h  h  h  s  h  s  h  r  h  s  r  h
  7  h  h  h  h  s  h  h  h  h  h  h  h  h
- 8  H  s  h  H  S  h  h  h  h  h  s  r  h
- 9  h  h  S  H  H  h  h  h  h  h  h  h  r
-10  H  S  H  S  H  H  H  S  h  h  h  H  h
-11  H  H  H  H  S  H  H  S  h  h  H  S  h
-12  s  h  s  s  s  h  h  h  h  h  h  h  r
+ 8  h  S  h  H  S  h  h  h  h  h  h  h  h
+ 9  h  H  H  H  S  h  h  h  h  h  h  h  r
+10  H  S  H  H  H  H  H  H  h  h  h  H  h
+11  H  H  H  H  S  H  H  H  h  h  H  S  h
+12  h  h  s  s  s  h  h  h  h  h  h  h  r
 13  h  s  s  s  s  h  h  h  h  h  h  h  r
-14  s  s  s  s  s  h  h  h  r  h  h  r  h
+14  s  s  s  s  s  h  h  h  r  r  r  r  h
 15  s  s  s  s  s  h  h  h  r  r  r  r  r
 16  s  s  s  s  s  h  h  r  r  r  r  r  h
 17  s  s  s  s  s  s  s  s  s  s  s  s  s
@@ -20,25 +20,25 @@ Hard
 21  S  S  S  H  S  S  s  S  s  s  s  s  s
 Soft
     2  3  4  5  6  7  8  9 10  J  Q  K  A
-12  h  s  s  H  S  S  r  H  r  r  S  h  S
-13  H  S  h  H  h  H  h  h  s  H  S  h  r
-14  H  h  h  S  H  h  h  r  h  h  h  h  r
-15  h  H  S  H  s  h  h  h  h  h  h  h  h
-16  s  s  H  s  S  h  h  h  h  h  s  r  h
-17  S  s  H  S  S  h  h  s  H  h  S  h  h
-18  H  s  s  s  H  s  h  s  h  H  s  s  s
-19  s  H  S  H  S  s  s  H  H  s  s  H  h
-20  s  s  s  s  S  s  s  s  s  s  s  s  s
-21  s  s  s  s  s  S  s  s  s  s  s  s  s
+12  s  s  s  H  S  S  r  S  H  s  r  h  S
+13  H  S  S  H  H  h  h  S  h  r  h  h  r
+14  H  h  h  H  H  h  h  r  h  h  h  h  r
+15  h  H  S  S  H  h  h  h  h  h  h  h  h
+16  S  H  H  S  S  h  h  h  h  h  h  r  h
+17  S  h  H  S  S  h  h  s  h  h  h  h  h
+18  s  S  s  s  H  s  s  h  h  h  h  h  s
+19  s  H  S  s  S  s  s  S  s  s  s  s  s
+20  s  s  s  s  s  s  s  s  s  s  s  s  s
+21  s  s  s  s  s  s  s  s  s  s  s  s  s
 Pairs
     2  3  4  5  6  7  8  9 10  J  Q  K  A
- 4  h  s  H  r  p  p  r  r  h  h  h  h  h
- 6  h  h  s  H  S  r  s  r  s  r  p  p  r
- 8  p  h  h  s  H  S  r  S  s  p  h  r  r
-10  H  h  H  S  H  H  S  S  h  h  S  h  r
-12  p  s  h  p  p  p  s  h  h  H  h  r  r
-14  s  h  p  p  S  h  h  H  r  H  r  r  r
-16  p  p  s  p  p  p  s  r  p  s  h  H  h
-18  p  p  p  s  p  s  p  r  h  p  p  p  s
-20  s  s  s  p  p  s  s  s  s  s  s  s  s
-22  p  p  p  p  p  p  h  p  H  r  p  S  p
+ 4  h  p  h  p  p  p  s  r  h  h  h  h  h
+ 6  h  h  s  h  p  r  h  r  h  r  r  s  r
+ 8  s  h  h  s  H  h  h  h  s  r  h  r  r
+10  H  h  H  S  H  H  H  H  h  h  S  S  r
+12  p  s  h  s  p  h  s  h  h  h  h  h  r
+14  s  s  p  p  p  h  h  h  r  h  r  r  h
+16  p  p  s  p  p  p  p  h  p  s  h  h  h
+18  p  p  p  s  p  s  p  s  s  s  p  p  s
+20  s  s  s  s  p  s  s  s  s  s  s  s  s
+22  p  p  p  p  p  p  h  p  p  p  p  S  p
