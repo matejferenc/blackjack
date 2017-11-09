@@ -1,17 +1,13 @@
 package com.mf.blackjack;
 
+import com.mf.evolution.Dna;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.function.Consumer;
 import java.util.stream.Stream;
-
-import com.mf.evolution.Dna;
 
 public class BlackjackDna extends Dna {
 
@@ -63,7 +59,7 @@ public class BlackjackDna extends Dna {
             sb.append(String.format("%1$3s", c.getName()));
         }
         sb.append("\n");
-        for (int i = 4; i <= 21; i++) {
+        for (int i = 5; i <= 21; i++) {
             sb.append(String.format("%1$2s", i));
             for (Card card : Card.values()) {
                 String name = hard.get(new State(i, card)).getName();
