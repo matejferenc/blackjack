@@ -19,25 +19,25 @@ Hard
 21  S  S  S  s  S  S  s  S  s  s  s  s  s
 Soft
     2  3  4  5  6  7  8  9 10  J  Q  K  A
-12  H  s  s  s  S  S  r  h  H  s  r  r  r
+12  H  s  s  H  S  S  r  r  H  s  H  r  r
 13  H  S  S  h  H  h  h  h  h  r  h  h  r
-14  h  h  h  H  H  h  h  h  h  h  h  h  r
+14  h  h  h  H  H  h  h  h  h  h  h  h  h
 15  h  H  S  S  H  h  h  h  h  h  h  h  h
 16  S  h  H  H  S  h  h  h  h  h  h  r  h
 17  S  h  H  S  S  h  h  h  h  h  h  h  h
-18  s  S  H  s  H  s  s  h  h  h  h  h  s
-19  s  H  S  s  S  s  s  s  s  s  s  s  s
+18  s  S  H  H  H  s  s  h  h  h  h  h  s
+19  s  S  S  s  S  s  s  s  s  s  s  s  s
 20  s  s  s  s  s  s  s  s  s  s  s  s  s
 21  s  s  s  s  s  s  s  s  s  s  s  s  s
 Pairs
     2  3  4  5  6  7  8  9 10  J  Q  K  A
  4  h  p  h  p  p  p  h  r  h  h  h  h  h
- 6  h  h  s  p  p  r  p  r  h  h  r  s  r
+ 6  h  h  h  p  p  r  p  r  h  h  r  s  r
  8  s  h  p  s  H  h  h  h  s  h  h  r  r
 10  H  h  H  S  S  H  H  H  h  h  S  S  r
-12  p  s  h  p  p  h  s  h  h  h  h  h  r
+12  p  s  h  r  p  h  s  h  h  h  h  h  r
 14  s  s  p  p  p  h  h  h  r  h  r  r  h
-16  p  p  s  p  p  p  p  h  p  s  h  h  h
+16  p  p  s  p  p  p  p  h  p  s  r  h  h
 18  p  p  p  s  p  s  p  s  s  s  s  s  s
 20  s  s  s  s  s  s  s  s  s  s  s  s  s
-22  p  p  p  p  p  p  h  p  p  p  p  p  p
+22  p  p  p  p  p  p  p  p  p  p  p  p  p
